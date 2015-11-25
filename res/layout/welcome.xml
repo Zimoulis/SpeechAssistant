@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/zmenu">
+	
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Speech Assistant"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center_vertical" >
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="User's Name:"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+						    <EditText
+						        android:id="@+id/ETusername"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:inputType="textPersonName" >
+						        <requestFocus />
+				   			 </EditText>
+			    <TextView
+			        android:id="@+id/textView3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Moderator's Name:"
+			        android:textAppearance="?android:attr/textAppearanceSmall" />
+						    <EditText
+						        android:id="@+id/ETmodname"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:inputType="textPersonName" />
+			    <TextView
+			        android:id="@+id/textView4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="password:"
+				    android:textAppearance="?android:attr/textAppearanceSmall" />							    <EditText
+								        android:id="@+id/ETpass1"
+								        android:layout_width="match_parent"
+								        android:layout_height="wrap_content"
+								        android:inputType="textPassword" />
+			    <TextView
+			        android:id="@+id/textView5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="confirm password:" />						    <EditText
+						        android:id="@+id/ETpass2"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:inputType="textPassword" />
+		</LinearLayout>
+
+	   <Button
+	       android:id="@+id/Button_Submit_WelcomeInfo"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="Submit Information" />
+
+</LinearLayout>

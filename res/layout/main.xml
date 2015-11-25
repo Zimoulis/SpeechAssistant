@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+<TableLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:stretchColumns="*"
+    >   
+    <TableRow>
+
+    <EditText
+        android:id="@+id/TablenameText"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/enter_table_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Folder" /></TableRow></TableLayout>
+
+
+
+<TableLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:stretchColumns="*"
+    >   
+    <TableRow>
+
+    <EditText
+        android:id="@+id/Word_nameText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content" >
+
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/WOrds_folderrefrence"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+    
+
+    <Button
+        android:id="@+id/enter_table_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Words" />
+    </TableRow>
+    
+   
+  </TableLayout>
+
+<TableLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:stretchColumns="*"
+    >   
+    <TableRow>
+
+        <Button
+            android:id="@+id/button_show_words"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Words" />
+
+        <Button
+            android:id="@+id/db_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Tables" />
+    
+     <Button
+        android:id="@+id/button_show_spaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Spaces" />    
+    
+	</TableRow></TableLayout>
+
+    <EditText
+        android:id="@+id/words_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine" />
+
+</LinearLayout>

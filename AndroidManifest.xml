@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lifeaide.Speech"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="10" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:debuggable="true">
+        
+        <activity
+            android:name=".Splash1" android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Splash" android:label="@string/app_name" android:theme="@style/Theme.Transparent" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.Splash" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Alerts" android:label="@string/app_name" android:theme="@style/Theme.Transparent" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.Alerts" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".DB_Backend" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.DB_Backend" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TextVoice" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.TextVoice" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    
+         <activity
+            android:name=".Menu" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.Menu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ExternalData" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.ExternalData" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".WriteExternalData" android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.WriteExternalData" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".SpeechAssistant" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.Speech_Grid_FrontEnd" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name=".ModeratorMenu" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.ModeratorMenu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".CreateWord" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"  android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.ModeratorMenu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreateFolder" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.ModeratorMenu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".Install" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.ModeratorMenu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PageBuilder" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.lifeaide.Speech.ModeratorMenu" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+
+    
+    
+    </application>
+
+</manifest>

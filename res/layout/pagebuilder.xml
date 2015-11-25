@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.gesture.GestureOverlayView
+    android:id="@+id/gestures"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="2dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	  
+	  <TableRow android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="1"
+		    android:gravity="center">
+	      <TextView
+	         android:id="@+id/pagebuildertitle"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="Page Builder Mode: "
+	         android:gravity="center_horizontal"
+	         android:textAppearance="?android:attr/textAppearanceLarge" />
+	     <TextView
+	         android:id="@+id/TVspace_name"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:text="Space_Name"
+	         android:gravity="center_horizontal"
+	         android:textAppearance="?android:attr/textAppearanceMedium" />
+      </TableRow>
+    	   
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"  
+       >
+        
+    </GridView>
+
+    <Spinner
+        android:id="@+id/folder_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    </LinearLayout>
+
+</android.gesture.GestureOverlayView>
